@@ -1,0 +1,190 @@
+/* 
+TTTTTTTTTTTTTTTTTTTTTTT        AAA                 CCCCCCCCCCCCC
+T:::::::::::::::::::::T       A:::A             CCC::::::::::::C
+T:::::::::::::::::::::T      A:::::A          CC:::::::::::::::C
+T:::::TT:::::::TT:::::T     A:::::::A        C:::::CCCCCCCC::::C
+TTTTTT  T:::::T  TTTTTT    A:::::::::A      C:::::C       CCCCCC
+        T:::::T           A:::::A:::::A    C:::::C              
+        T:::::T          A:::::A A:::::A   C:::::C              
+        T:::::T         A:::::A   A:::::A  C:::::C              
+        T:::::T        A:::::A     A:::::A C:::::C              
+        T:::::T       A:::::AAAAAAAAA:::::AC:::::C              
+        T:::::T      A:::::::::::::::::::::C:::::C              
+        T:::::T     A:::::AAAAAAAAAAAAA:::::C:::::C       CCCCCC
+      TT:::::::TT  A:::::A             A:::::C:::::CCCCCCCC::::C
+      T:::::::::T A:::::A               A:::::CC:::::::::::::::C
+      T:::::::::TA:::::A                 A:::::ACCC::::::::::::C
+      TTTTTTTTTTAAAAAAA                   AAAAAAA  CCCCCCCCCCCCC 
+     
+©copyright ~ Thibault Costa ~ Amaury Meugnier ~ Cédric ELLIOTT 
+*/
+.lsh_pad{
+    margin:0;
+    padding:0;
+}
+#stx-cards img{
+    /* width: 300px;
+    height: 300px; */
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#stx-cards{
+    border : 2px solid rgb(213, 221, 228) ;
+    padding: 0 0 20px 0;
+    margin: 20px 0;
+    border-radius: 1%;
+}
+#stx-cards:hover{
+/* -moz-transform: rotate(1deg) translate(3px, -3px) skew(-1deg, 1deg);
+-webkit-transform: rotate(1deg) translate(3px, -3px) skew(-1deg, 1deg);
+-o-transform: rotate(1deg) translate(3px, -3px) skew(-1deg, 1deg);
+-ms-transform: rotate(1deg) translate(3px, -3px) skew(-1deg, 1deg);
+transform: rotate(1deg) translate(3px, -3px) skew(-1deg, 1deg); */
+
+-webkit-box-shadow: 4px 0px 26px 15px rgba(119,119,119,0.66); 
+box-shadow: 4px 0px 26px 15px rgba(119,119,119,0.66);
+}
+
+.stx-navimg img{
+width:50px;
+height: 50px;
+}
+
+/* nav{
+    background-color: red;
+} */
+
+footer{
+  padding: 5px;  
+}
+
+#main {
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+
+#pageLogin,#pageLoginCreation {
+    height: 80vh;
+    width: auto;
+}
+
+#pageLogin>.container {
+    width: 25%;
+
+}
+#pageLoginCreation>.container {
+    width: 30%;
+}
+
+#pageLogin>.container * {
+    margin: 0.23rem;
+}
+
+#pageAdministration {
+    background-color: blueviolet;
+}
+
+#pageGestion {
+    /* background-color: sandybrown; */
+
+}
+
+#pageReservation {
+    /* background-color: green; */
+
+}
+
+.clignote{
+    color:red;
+    animation: clignote 2s linear infinite;
+    text-align: center;
+}
+@keyframes clignote {  
+50% { opacity: 0; }
+}
+
+.stx-star img{
+width: 30px;
+}
+
+.boat{
+    width: 250px;
+}
+/* etoiles notation*/
+/* etoiles notation*/
+
+.etoile {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.etoile:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.etoile:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.etoile:not(:checked) > label:before {
+    content: '★ ';
+}
+.etoile > input:checked ~ label {
+    color: #ffc700;    
+}
+.etoile:not(:checked) > label:hover,
+.etoile:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.etoile > input:checked + label:hover,
+.etoile > input:checked + label:hover ~ label,
+.etoile > input:checked ~ label:hover,
+.etoile > input:checked ~ label:hover ~ label,
+.etoile > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* etoiles notation*/
+.stx-marginb {
+    margin-bottom: 15px;
+}
+
+.stx-margint {
+    margin-top: 50px;
+}
+.stx-comhead {
+    background-color : #EFEFEF;
+   
+}
+
+.stx-star {
+    background-color: #EFEFEF;
+    margin-bottom: 30px;
+}
+
+.stx-comm{
+    margin : 20px 0;
+}
+.stx-combody{
+border : 2px solid #EFEFEF;
+}
+
+h6{
+    margin-bottom: 0;
+}
+
+.wxc-login {
+    background-image: url('../assets/loginpapyrus.jpg');
+    background-position: center center;
+
+}
